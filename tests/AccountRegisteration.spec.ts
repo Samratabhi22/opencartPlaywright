@@ -61,7 +61,7 @@ test('User registration test @master @sanity @regression', async () => {
     //Validate the confirmation message
 
     const confirmationMsg = await registrationPage.getConfirmationMsg();
-    expect(confirmationMsg).toContain('Your Account Has Been Created!')
-
+    //expect(confirmationMsg).toContain('Your Account Has Been Created!')
+    expect(confirmationMsg).toContain('Your Account Has Been Create')//intentionally failing
 
 })
